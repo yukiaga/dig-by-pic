@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: dig-by-pic_production
-  username: dig-by-pic
-  password: <%= ENV['DIG-BY-PIC_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
