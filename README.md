@@ -1,24 +1,58 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users table
 
-Things you may want to cover:
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, unique: true|
+|email|string|null: false, unique: true|
+|password|string|null: false|
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :artworks
+- has_many :collections
 
-* Configuration
 
-* Database creation
+## collections table
 
-* Database initialization
+|Column|Type|Options|
+|------|----|-------|
+|title|string|null: false|
+|email|string|null: false|
+|user_id|integer|null: false, foreign_key: true|
 
-* How to run the test suite
+### Association
 
-* Services (job queues, cache servers, search engines, etc.)
+- has_many :artwork_collections
+- has_many :artworks, through: artwork_collections
+- belongs_to :user
 
-* Deployment instructions
 
-* ...
+## artworks table
+
+|Column|Type|Options|
+|------|----|-------|
+|title|string|null: false|
+|image|string|null: false|
+|link|string||
+|artist|string||
+
+### Association
+
+- has_many :artwork_collections
+- has_many :collections, through: artwork_collections
+- belongs_to :user
+
+
+## artwork_collections table
+
+|Column|Type|Options|
+|------|----|-------|
+|artwork_id|integer|foreign_key: true|
+|collection_id|integer|foreign_key: true|
+
+### Association
+
+- belongs_to :artwork
+- belongs_to :collection
