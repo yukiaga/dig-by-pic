@@ -1,0 +1,26 @@
+.header {
+  background-color: none;
+  height: 86px;
+  line-height: 86px;
+  padding: 0 20px;
+  margin-left: 20px;
+  margin-right: 45px;
+
+  &__icon{
+    float: left;
+    font-size: 20px;
+  }
+
+  &__menu {
+    display: flex;
+    float: right;
+
+    a {
+      margin-left: 25px;
+      margin-right: 25px;
+      color: #ccc;
+    }
+
+  }
+}
+
