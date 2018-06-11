@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <p id="notice"><%= notice %></p>
     <header>
       <div class="header">
         <h1 class="header__icon"><a href="/">Dig-By-Pic</a></h1>
@@ -24,7 +25,7 @@
             <a href="/">login</a>
           </li>
           <li>
-            <a href="/">post</a>
+            <%= link_to 'post', new_artwork_path %>
           </li>
         </ul>
       </div>
@@ -32,11 +33,6 @@
 
     <%= yield %>
 
-    <footer>
-      <div class="footer">
-        <p>Copyright Dig-By-Pic 2018.</p>
-      </div>
-    </footer>
   </body>
 
 </html>
