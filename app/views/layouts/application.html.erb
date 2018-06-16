@@ -10,22 +10,19 @@
   </head>
 
   <body>
-    <p id="notice"><%= notice %></p>
     <header>
       <div class="header">
-        <h1 class="header__icon"><a href="/">Dig-By-Pic</a></h1>
+        <h1 class="header__icon"><a href="/"><%= image_tag "/assets/dig-by-pic.svg", size: '225x125'  %></a></h1>
         <ul class="header__menu">
           <li>
-            <a href="/">top</a>
+            <a href="/" id="about"><%= image_tag "/assets/about.svg", size: '125x75'  %></a>
           </li>
           <li>
-            <a href="/">about</a>
+            <a href="/" id="login"><%= image_tag "/assets/login.svg", size: '125x75'  %></a>
           </li>
           <li>
-            <a href="/">login</a>
-          </li>
-          <li>
-            <%= link_to 'post', new_artwork_path %>
+            <a href="/"><%= image_tag "/assets/contact.svg", size: '125x75'  %></a>
+            <!-- <%= link_to 'post', new_artwork_path %> -->
           </li>
         </ul>
       </div>

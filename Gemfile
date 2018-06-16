@@ -69,9 +69,11 @@ gem "devise"
 gem "carrierwave"
 gem "mini_magick"
 gem "pry-rails"
-gem "jquery-rails"
-gem 'jquery-ui-rails'
+gem "jquery-rails", '~> 4.2.0'
+gem "jquery-ui-rails"
 gem "masonry-rails"
+gem "mechanize"
+gem 'kaminari'
 
 group :production do
   gem 'unicorn'

@@ -1,32 +1,58 @@
 <div class="main">
 
-  <% @artwork_resize.each do |artwork| %>
-    <% if artwork.size == 1 then %>
-      <div class="box size--1">
-        <%= image_tag artwork.image %>
+  <div id="inline-wrap" class="mfp-hide">
+    <div class="popup">
+      <div class="popup__image">
+        ここに画像が表示される
       </div>
-    <% elsif artwork.size == 2 then%>
-      <div class="box size--2">
-        <%= image_tag artwork.image %>
+      <div class="popup__title">
+　　　   タイトルが表示される
       </div>
-    <% elsif artwork.size == 3 then%>
-      <div class="box size--3">
-        <%= image_tag artwork.image %>
+      <div class="popup__artist">
+        アーティストが表示される
       </div>
-    <% elsif artwork.size == 4 then%>
-      <div class="box size--4">
-        <%= image_tag artwork.image %>
+      <div class="popup__link">
+        リンクが表示される
       </div>
-    <% elsif artwork.size == 5 then%>
-      <div class="box size--5">
-        <%= image_tag artwork.image %>
-      </div>
-    <% elsif artwork.size == 6 then%>
-      <div class="box size--6">
-        <%= image_tag artwork.image %>
-      </div>
+      <p class="popup__modal-dismiss">
+        <a href="/">- close -</a>
+      </p>
+    </div>
+  </div>
+
+  <a class="popup-modal" href="#inline-wrap">
+    <% @artworks.each do |artwork| %>
+      <% if artwork.size == 1 then %>
+        <div class="box size--1" data-artwork-title="<%= artwork.title %>" data-artwork-link="<%= artwork.link %>" data-artwork-artist="<%= artwork.artist %>">
+          <%= image_tag artwork.image %>
+        </div>
+      <% elsif artwork.size == 2 then%>
+        <div class="box size--2" data-artwork-title="<%= artwork.title %>" data-artwork-link="<%= artwork.link %>" data-artwork-artist="<%= artwork.artist %>">
+          <%= image_tag artwork.image %>
+        </div>
+      <% elsif artwork.size == 3 then%>
+        <div class="box size--3" data-artwork-title="<%= artwork.title %>" data-artwork-link="<%= artwork.link %>" data-artwork-artist="<%= artwork.artist %>">
+          <%= image_tag artwork.image %>
+        </div>
+      <% elsif artwork.size == 4 then%>
+        <div class="box size--4" data-artwork-title="<%= artwork.title %>" data-artwork-link="<%= artwork.link %>" data-artwork-artist="<%= artwork.artist %>">
+          <%= image_tag artwork.image %>
+        </div>
+      <% elsif artwork.size == 5 then%>
+        <div class="box size--5" data-artwork-title="<%= artwork.title %>" data-artwork-link="<%= artwork.link %>" data-artwork-artist="<%= artwork.artist %>">
+          <%= image_tag artwork.image %>
+        </div>
+      <% elsif artwork.size == 6 then%>
+        <div class="box size--6" data-artwork-title="<%= artwork.title %>" data-artwork-link="<%= artwork.link %>" data-artwork-artist="<%= artwork.artist %>">
+          <%= image_tag artwork.image %>
+        </div>
+      <% end %>
     <% end %>
-  <% end %>
+  </a>
+
+  <div class="navigation" id="navigation" style="display:none;">
+    <%= paginate @artworks %>
+  </div>
 
 </div>
 

@@ -2,14 +2,7 @@ class ArtworksController < ApplicationController
   before_action :set_artwork, only: [:show, :edit, :update, :destroy]
 
   def index
-    @artworks = Artwork.all
-    @artwork_resize = []
-    @artworks.each do |artwork|
-      random = Random.new
-      i = random.rand(1..6)
-      artwork[:size] = i
-      @artwork_resize << artwork
-    end
+    @artworks = Kaminari.paginate_array(Artwork.all.shuffle).page(params[:page]).per(150)
   end
 
   def show
