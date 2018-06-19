@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :users, only: :show
+
+  get 'about', to: 'tops#about'
+  get 'users/:id', to: 'tops#show'
+  get 'contact', to: 'tops#contact'
 
   root to: "artworks#index"
 

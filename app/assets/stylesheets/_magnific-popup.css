@@ -123,7 +123,7 @@ button::-moz-focus-inner {
   border: 0; }
 
 .mfp-close {
-  width: 44px;
+ /* width: 44px;
   height: 44px;
   line-height: 44px;
   position: absolute;
@@ -136,7 +136,7 @@ button::-moz-focus-inner {
   color: #FFF;
   font-style: normal;
   font-size: 28px;
-  font-family: Arial, Baskerville, monospace; }
+  font-family: Arial, Baskerville, monospace;*/ }
   .mfp-close:hover,
   .mfp-close:focus {
     opacity: 1; }

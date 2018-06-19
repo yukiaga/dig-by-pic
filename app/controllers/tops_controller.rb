@@ -1,4 +1,7 @@
-class UsersController < ApplicationController
+class TopsController < ApplicationController
+
+  def about
+  end
 
   def show
     @artworks = []
@@ -6,7 +9,9 @@ class UsersController < ApplicationController
     likes.each do |like|
       @artworks << Artwork.find_by(id: like.artwork_id)
     end
+    @artworks = @artworks.reverse
     @likes = Like.where(user_id: current_user.id)
   end
+
 
 end

@@ -12,23 +12,53 @@
   <body>
     <header>
       <div class="header">
+
         <h1 class="header__icon" id="rect"><a href="/"><%= image_tag "/assets/dig-by-pic.svg", size: '225x125'  %></a></h1>
-        <ul class="header__menu" id="rect">
-          <li>
-            <a href="/" id="about"><%= image_tag "/assets/about.svg", size: '125x75'  %></a>
-          </li>
-          <li>
-            <% if user_signed_in? %>
-              <a href="/users/<%= current_user.id %>" id="mypage"><%= image_tag "/assets/mypage.svg", size: '125x75'  %></a>
-            <% else %>
-              <a href="/users/sign_in" id="login"><%= image_tag "/assets/login.svg", size: '125x75'  %></a>
-            <% end %>
-          </li>
-          <li>
-            <a href="/"><%= image_tag "/assets/contact.svg", size: '125x75'  %></a>
-            <!-- <%= link_to 'post', new_artwork_path %> -->
-          </li>
-        </ul>
+
+        <button class="menu_btn none"><h id="menu_btn_string">Menu</h>
+          <button class="menu_list none">
+            <ul>
+              <li id="menu_list_home">
+                <a href="/">home</a>
+              </li>
+              <li id="menu_list_about">
+                <a href="/about">about</a>
+              </li>
+              <li id="menu_list_login">
+                <% if user_signed_in? %>
+                  <a href="/users/<%= current_user.id %>">my page</a>
+                <% else %>
+                  <a href="/users/sign_in">login</a>
+                <% end %>
+              </li>
+              <li id="menu_list_contact">
+                <a href="/contact">contact</a>
+              </li>
+            </ul>
+          </button>
+        </button>
+
+        <nav class="navbar">
+          <ul class="header__menu">
+            <li>
+              <a href="/" id="home">home</a>
+            </li>
+            <li>
+              <a href="/about" id="about">about</a>
+            </li>
+            <li>
+              <% if user_signed_in? %>
+                <a href="/users/<%= current_user.id %>" id="mypage">my page</a>
+              <% else %>
+                <a href="/users/sign_in" id="login">login</a>
+              <% end %>
+            </li>
+            <li>
+              <a href="/contact" id="contact">contact</a>
+            </li>
+          </ul>
+        </nav>
+
       </div>
     </header>
 

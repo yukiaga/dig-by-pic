@@ -1,5 +1,4 @@
-<div class="main">
-
+<div class="main show-main">
 
   <% @artworks.each do |artwork| %>
 
@@ -22,41 +21,43 @@
         <div id="jsreturn">
           <%= render partial: 'likes/like', locals: { artwork: artwork, likes: @likes} %>
         </div>
-        <p class="popup__modal-dismiss">
-          <a href="/">- close -</a>
-        </p>
+        <button class="mfp-close">- close -</button>
       </div>
     </div>
 
 　  <a class="popup-modal" href="#inline-wrap-<%=artwork.id%>">
       <% if artwork.size == 1 then %>
-        <div class="box size--1" >
+        <div class="box size--2">
           <%= image_tag artwork.image %>
         </div>
       <% elsif artwork.size == 2 then%>
-        <div class="box size--2" >
+        <div class="box size--2">
           <%= image_tag artwork.image %>
         </div>
       <% elsif artwork.size == 3 then%>
-        <div class="box size--3" >
+        <div class="box size--2">
           <%= image_tag artwork.image %>
         </div>
       <% elsif artwork.size == 4 then%>
-        <div class="box size--4" >
+        <div class="box size--2">
           <%= image_tag artwork.image %>
         </div>
       <% elsif artwork.size == 5 then%>
-        <div class="box size--5" >
+        <div class="box size--2">
           <%= image_tag artwork.image %>
         </div>
       <% elsif artwork.size == 6 then%>
-        <div class="box size--6" >
+        <div class="box size--2">
           <%= image_tag artwork.image %>
         </div>
       <% end %>
 　  </a>
 
   <% end %>
+
+  <div class="mypage__box">
+    &nbsp;&nbsp;Mypage : <%= current_user.name %>&nbsp;&nbsp;-Artworks you liked-&nbsp;&nbsp;
+  </div>
 
 </div>
 
