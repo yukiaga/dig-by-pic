@@ -27,28 +27,28 @@
 
 　  <a class="popup-modal" href="#inline-wrap-<%=artwork.id%>">
       <% if artwork.size == 1 then %>
-        <div class="box size--2">
-          <%= image_tag artwork.image %>
+        <div class="box size--show">
+          <%= image_tag(artwork.image, id:"artwork", alt:"artwork") %>
         </div>
       <% elsif artwork.size == 2 then%>
-        <div class="box size--2">
-          <%= image_tag artwork.image %>
+        <div class="box size--show">
+          <%= image_tag(artwork.image, id:"artwork", alt:"artwork") %>
         </div>
       <% elsif artwork.size == 3 then%>
-        <div class="box size--2">
-          <%= image_tag artwork.image %>
+        <div class="box size--show">
+          <%= image_tag(artwork.image, id:"artwork", alt:"artwork") %>
         </div>
       <% elsif artwork.size == 4 then%>
-        <div class="box size--2">
-          <%= image_tag artwork.image %>
+        <div class="box size--show">
+          <%= image_tag(artwork.image, id:"artwork", alt:"artwork") %>
         </div>
       <% elsif artwork.size == 5 then%>
-        <div class="box size--2">
-          <%= image_tag artwork.image %>
+        <div class="box size--show">
+          <%= image_tag(artwork.image, id:"artwork", alt:"artwork") %>
         </div>
       <% elsif artwork.size == 6 then%>
-        <div class="box size--2">
-          <%= image_tag artwork.image %>
+        <div class="box size--show">
+          <%= image_tag(artwork.image, id:"artwork", alt:"artwork") %>
         </div>
       <% end %>
 　  </a>

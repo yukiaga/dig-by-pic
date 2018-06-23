@@ -13,5 +13,28 @@ class TopsController < ApplicationController
     @likes = Like.where(user_id: current_user.id)
   end
 
+  def contact
+    @inquiry = Inquiry.new
+  end
+
+  def confirm
+    @inquiry = Inquiry.new(inquiry_params)
+    if @inquiry.valid?
+      render action: 'confirm'
+    else
+      render action: 'contact'
+    end
+  end
+
+  def thanks
+    @inquiry = Inquiry.new(inquiry_params)
+    InquiryMailer.received_email(@inquiry).deliver
+  end
+
+  private
+
+    def inquiry_params
+      params.require(:inquiry).permit(:name, :email, :message)
+    end
 
 end

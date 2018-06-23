@@ -1,0 +1,33 @@
+<div class="inquiry">
+  <div class="page-header">
+    <h1>Contact</h1>
+  </div>
+
+  <%= form_for @inquiry, :url => contact_thanks_path do |f| %>
+    <table class="table">
+      <tr>
+        <th>name :</th>
+        <td>
+          <%= f.hidden_field :name %>
+          <%= @inquiry.name %>
+        </td>
+      </tr>
+      <tr>
+        <th>email :</th>
+        <td>
+          <%= f.hidden_field :email %>
+          <%= @inquiry.email %>
+        </td>
+      </tr>
+      <tr>
+        <th>message :</th>
+        <td>
+          <%= f.hidden_field :message %>
+          <%= simple_format(@inquiry.message) %>
+        </td>
+      </tr>
+    </table>
+    <%= f.submit 'send', :class => 'btn btn-primary' %>
+　　 <%= link_to 'back', :back, class: "back_btn" %>
+  <% end %>
+</div>

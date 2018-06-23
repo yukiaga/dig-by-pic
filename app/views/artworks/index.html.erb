@@ -1,4 +1,5 @@
 <div class="main">
+
   <% @artworks.each do |artwork| %>
 
     <div id="inline-wrap-<%=artwork.id%>" class="mfp-hide">
@@ -27,27 +28,33 @@
 　  <a class="popup-modal" href="#inline-wrap-<%=artwork.id%>" >
       <% if artwork.size == 1 then %>
         <div class="box size--1" >
-          <%= image_tag artwork.image %>
+          <%= image_tag(artwork.image, id:"artwork", alt:"artwork") %>
+          <span class="balloon">Artist : <%= artwork.artist %>&nbsp&nbsp</span>
         </div>
       <% elsif artwork.size == 2 then%>
         <div class="box size--2" >
-          <%= image_tag artwork.image %>
+          <%= image_tag(artwork.image, id:"artwork", alt:"artwork") %>
+          <span class="balloon">Artist : <%= artwork.artist %>&nbsp&nbsp</span>
         </div>
       <% elsif artwork.size == 3 then%>
         <div class="box size--3" >
-          <%= image_tag artwork.image %>
+          <%= image_tag(artwork.image, id:"artwork", alt:"artwork") %>
+          <span class="balloon">Artist : <%= artwork.artist %>&nbsp&nbsp</span>
         </div>
       <% elsif artwork.size == 4 then%>
         <div class="box size--4" >
-          <%= image_tag artwork.image %>
+          <%= image_tag(artwork.image, id:"artwork", alt:"artwork") %>
+          <span class="balloon">Artist : <%= artwork.artist %>&nbsp&nbsp</span>
         </div>
       <% elsif artwork.size == 5 then%>
         <div class="box size--5" >
-          <%= image_tag artwork.image %>
+          <%= image_tag(artwork.image, id:"artwork", alt:"artwork") %>
+          <span class="balloon">Artist : <%= artwork.artist %>&nbsp&nbsp</span>
         </div>
       <% elsif artwork.size == 6 then%>
         <div class="box size--6" >
-          <%= image_tag artwork.image %>
+          <%= image_tag(artwork.image, id:"artwork", alt:"artwork") %>
+          <span class="balloon">Artist : <%= artwork.artist %>&nbsp&nbsp</span>
         </div>
       <% end %>
 　  </a>

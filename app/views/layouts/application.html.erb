@@ -11,9 +11,15 @@
 
   <body>
     <header>
+
+    <div>
+<!--   <%=image_tag('test.jpg', class:"background", alt:"background") %> -->
+    </div>
+
       <div class="header">
 
-        <h1 class="header__icon" id="rect"><a href="/"><%= image_tag "/assets/dig-by-pic.svg", size: '225x125'  %></a></h1>
+<!--       <h1 class="header__logo"><a href="/">Dig-By-Pic</a></h1> -->
+　　　　<h1 class="header__icon" id="rect"><a href="/"><%= image_tag "/assets/dig-by-pic.svg", size: '225x125'  %></a></h1>
 
         <button class="menu_btn none"><h id="menu_btn_string">Menu</h>
           <button class="menu_list none">
@@ -62,8 +68,15 @@
       </div>
     </header>
 
+    <div class="background__tree2">
+      <%= image_tag "/assets/background__tree2.svg", size: '280x200'  %>
+    </div>
+
     <%= yield %>
 
+    <div class="background__tree">
+      <%= image_tag "/assets/background__tree.svg", size: '280x200'  %>
+    </div>
   </body>
 
 </html>

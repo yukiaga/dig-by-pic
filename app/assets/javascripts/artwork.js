@@ -4,6 +4,7 @@ $(document).on('turbolinks:load', function(){
 
   $main.masonry({
     itemSelector : '.box',
+    columnWidth: 80,
     isAnimated: true,
     animationOptions: {
     duration: 800,
