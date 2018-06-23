@@ -2,7 +2,7 @@ class Scraping
   def self.artwork_urls
     agent = Mechanize.new
     # プレイリストのURLを指定
-    page = agent.get("https://open.spotify.com/user/spotify/playlist/37i9dQZF1DZ06evO1yae8Y")
+    page = agent.get("https://open.spotify.com/user/tobi-411/playlist/589TKvfipT5fDYwfvYEACS")
     element_html = page.search('.artists-albums a')
 
     # href要素のみの抽出
