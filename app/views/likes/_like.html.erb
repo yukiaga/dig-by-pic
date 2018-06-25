@@ -4,21 +4,11 @@
   <% like = like[0] %>
     <%= button_to artwork_like_path(artwork_id: artwork.id, id: like.id), method: :delete, id: "like", remote: true do %>
       <%= image_tag "liked.svg", size: '125x75', id:"like__image" %>
-<!--       <span class="like__num">
-        like : <%= artwork.likes_count %>
-      </span> -->
     <% end %>
   <% else %>
     <%= button_to artwork_likes_path(artwork_id: artwork.id), id: "like", remote: true do %>
       <%= image_tag "like.svg", size: '125x75', id:"like__image" %>
-<!--       <span class="like__num">
-        like : <%= artwork.likes_count %>
-      </span> -->
     <% end %>
   <% end %>
 <% else %>
-  <%= image_tag "like.svg", size: '125x75', id: "like", id:"like__image" %>
-<!--     <span class="like__num">
-      like : <%= artwork.like_count %>
-    </span> -->
 <% end %>

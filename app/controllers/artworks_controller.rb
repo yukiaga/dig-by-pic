@@ -3,7 +3,9 @@ class ArtworksController < ApplicationController
 
   def index
     @artworks = Artwork.order("RAND()").includes(:likes).page(params[:page]).per(150)
-    @likes = Like.where(user_id: current_user.id)
+    if user_signed_in?
+      @likes = Like.where(user_id: current_user.id)
+    end
     # @artworks = Kaminari.paginate_array(Artwork.includes(:like).shuffle).page(params[:page]).per(10)
   end
 

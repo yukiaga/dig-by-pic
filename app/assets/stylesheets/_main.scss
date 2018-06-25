@@ -149,34 +149,11 @@ body {
 //   z-index: 1;
 // }
 
-.show-main {
-  margin-top: 110px;
-}
-
 .mfp-close {
   margin: 25px auto 0px;
   font-size: 12px;
   opacity: 0.50;
 }
-
-.mypage__box {
-  line-height: 30px;
-  text-align: center;
-  width: 250px;
-  height: 30px;
-  border-style: solid;
-  border-width: 0.5px;
-  opacity: 0.95;
-  position: fixed;
-  bottom: 30px;
-  right: 50px;
-  font-family: 'American Typewriter';
-  z-index: 2;
-  border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
-  background-color: white;
-  font-size: 11px;
-}
-
 
 // マウスの上に表示させたいので休止
 .balloon {
@@ -196,5 +173,6 @@ body {
     text-indent: 6px;
     color: #464242e6;
 }
+
 
 

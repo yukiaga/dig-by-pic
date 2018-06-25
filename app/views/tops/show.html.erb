@@ -56,7 +56,15 @@
   <% end %>
 
   <div class="mypage__box">
-    &nbsp;&nbsp;Mypage : <%= current_user.name %>&nbsp;&nbsp;-Artworks you liked-&nbsp;&nbsp;
+    <h1 id="mypage__topic">
+      &nbsp;&nbsp;Mypage : <%= current_user.name %>
+    </h1>
+    <%= link_to "edit", method: :get, id:"edit" do %>
+      <%= image_tag "edit_icon.jpg", size: '16x16', id:"edit_icon" %>
+    <% end %>
+    <%= link_to "sign_out", method: :delete, id:"sign_out" do %>
+      <%= image_tag "logout_icon.jpg", size: '19x19', id:"sign_out_icon" %>
+    <% end %>
   </div>
 
 </div>
