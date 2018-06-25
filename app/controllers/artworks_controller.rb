@@ -2,7 +2,7 @@ class ArtworksController < ApplicationController
   before_action :set_artwork, only: [:show, :edit, :update, :destroy]
 
   def index
-    @artworks = Artwork.order("RAND()").includes(:likes).page(params[:page]).per(150)
+    @artworks = Artwork.order("RAND()").includes(:likes).page(params[:page]).per(300)
     if user_signed_in?
       @likes = Like.where(user_id: current_user.id)
     end
