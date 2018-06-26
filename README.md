@@ -1,4 +1,4 @@
-![dig-by-pic](https://i.gyazo.com/cfd325343989fefc0944bc8c45a3fd04.gif "image")
+![dig-by-pic](https://imgur.com/a/ODJrcJV "image")
 
 # README
 
