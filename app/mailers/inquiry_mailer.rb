@@ -14,5 +14,3 @@ class InquiryMailer < ApplicationMailer
   end
 
 end
-
-    # mail to: Rails.application.credentials.gmail_address
