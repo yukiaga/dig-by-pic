@@ -1,5 +1,3 @@
-![dig-by-pic](https://imgur.com/a/ODJrcJV "image")
-
 # README
 
 ## users table
