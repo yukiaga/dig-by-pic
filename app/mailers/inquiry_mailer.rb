@@ -7,7 +7,7 @@ class InquiryMailer < ApplicationMailer
   def received_email(inquiry)
     @inquiry = inquiry
 
-    mail to: 'onsencouncil@gmail.com'
+    mail to: Rails.application.credentials.gmail_address
 
     mail subject: 'お問い合わせ'
 
