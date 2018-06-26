@@ -8,8 +8,9 @@ class InquiryMailer < ApplicationMailer
     @inquiry = inquiry
 
     mail subject: '@inquiry.nameお問い合わせを承りました'
-
-    mail to: Rails.application.credentials.gmail_address
+    mail to: 'onsencouncil@gmail.com'
   end
 
 end
+
+    # mail to: Rails.application.credentials.gmail_address
