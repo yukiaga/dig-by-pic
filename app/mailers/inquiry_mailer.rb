@@ -7,8 +7,10 @@ class InquiryMailer < ApplicationMailer
   def received_email(inquiry)
     @inquiry = inquiry
 
-    mail subject: '@inquiry.nameお問い合わせを承りました'
     mail to: 'onsencouncil@gmail.com'
+
+    mail subject: 'お問い合わせを承りました'
+
   end
 
 end
