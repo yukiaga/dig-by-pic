@@ -69,6 +69,7 @@ Rails.application.configure do
     :password => '10warisoba',
     :authentication => :login,
     :enable_starttls_auto => true
+    :tls => true
   }
 end
 
