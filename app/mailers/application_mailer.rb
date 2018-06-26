@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'onsencouncil@gmail.com'
+  default from: Rails.application.credentials.gmail_address
   layout 'mailer'
 end
