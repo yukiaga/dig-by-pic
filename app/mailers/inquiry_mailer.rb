@@ -9,7 +9,7 @@ class InquiryMailer < ApplicationMailer
 
     mail to: 'onsencouncil@gmail.com'
 
-    mail subject: 'お問い合わせを承りました'
+    mail subject: 'お問い合わせ'
 
   end
 
