@@ -68,7 +68,7 @@ Rails.application.configure do
     :user_name => 'onsencouncil@gmail.com',
     :password => '10warisoba',
     :authentication => :login,
-    :enable_starttls_auto => true
+    :enable_starttls_auto => true,
     :tls => true
   }
 end
