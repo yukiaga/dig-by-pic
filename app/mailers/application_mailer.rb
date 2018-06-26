@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'onsencouncil@gmail.com'
+  default from: 'smtp.gmail.com'
   layout 'mailer'
 end
