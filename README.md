@@ -1,3 +1,7 @@
+# How it works
+
+![dig-by-pic.gif](https://github.com/yukiaga/dig-by-pic/wiki/images/dig-by-pic.gif)
+
 ![dig-by-pic.gif](https://github.com/yukiaga/dig-by-pic/wiki/images/dig-by-pic.gif)
 
 # README
