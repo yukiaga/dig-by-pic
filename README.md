@@ -1,6 +1,6 @@
 # README
 
-- How it works -
+How it works
 
 ## top & mypage
 
