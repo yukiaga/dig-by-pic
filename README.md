@@ -1,4 +1,6 @@
-# How it works
+# README
+
+- How it works -
 
 ## top & mypage
 
@@ -7,8 +9,6 @@
 ## link to spotify
 
 ![dig-by-pic.gif](https://github.com/yukiaga/dig-by-pic/wiki/images/dig-by-pic2.gif)
-
-# README
 
 ## users table
 
