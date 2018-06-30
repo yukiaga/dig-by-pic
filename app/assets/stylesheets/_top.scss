@@ -23,7 +23,7 @@
 
   &__logo {
     font-size: 27px;
-    font-family: 'American Typewriter';
+    font-family: "seravek";
     position: fixed;
     top: 0;
   }
@@ -43,7 +43,7 @@
     margin-right: 30px;
     display: flex;
     float: right;
-    font-family: 'American Typewriter';
+    font-family: "seravek";
     opacity: 0.8;
 
     a {
@@ -51,7 +51,10 @@
     }
 
     #home {
-      margin-right: 38px;
+      margin-right: 40px;
+      background-color: white;
+      padding: 6px 10px 6px;
+      border-radius: 10px 10px 10px 10px;
     }
 
     #home:hover {
@@ -60,7 +63,10 @@
     }
 
     #about {
-      margin-right: 38px;
+      margin-right: 35px;
+      background-color: white;
+      padding: 6px 10px 6px;
+      border-radius: 10px 10px 10px 10px;
     }
 
     #about:hover {
@@ -69,7 +75,10 @@
     }
 
     #login {
-      margin-right: 30px;
+      margin-right: 35px;
+      background-color: white;
+      padding: 6px 10px 6px;
+      border-radius: 10px 10px 10px 10px;
     }
 
     #login:hover {
@@ -78,7 +87,10 @@
     }
 
     #mypage {
-      margin-right: 30px;
+      margin-right: 35px;
+      background-color: white;
+      padding: 6px 10px 6px;
+      border-radius: 10px 10px 10px 10px;
     }
 
     #mypage:hover {
@@ -87,7 +99,10 @@
     }
 
     #contact {
-      margin-right: 30px;
+      margin-right: 35px;
+      background-color: white;
+      padding: 6px 10px 6px;
+      border-radius: 10px 10px 10px 10px;
     }
 
     #contact:hover {
@@ -96,17 +111,13 @@
     }
   }
 
-  .none{
-    display: none;
-  }
-
   .menu_btn {
     cursor: pointer;
     padding: 10px;
     position: fixed;
     right: 30px;
     top: 40px;
-    font-family: 'American Typewriter';
+    font-family: "seravek";
     opacity: 0.9;
     border-radius: 3px 3px 3px 3px;
     width: 90px;
@@ -204,7 +215,4 @@
   z-index: 1;
 }
 
-.tree__none{
-    display: none;
-}
 

@@ -2,8 +2,10 @@ $(document).on('turbolinks:load', function(){
 
   var $btn = $('.menu_btn');
   var $nav = $('.navbar');
-  var $bgt = $('.background__tree2')
-  var $img = $('.about__image--1')
+  var $bgt = $('.background__tree2');
+  var $img = $('.about__image--1');
+  var $img__about = $('.about__1stcontent__right__image');
+  var $img__about2 = $('.about__2ndcontent__right__image');
 
   var w = $(window).width(); //ブラウザの幅を取得
   var x = 720;　//ブレイクポイントを設定
@@ -12,14 +14,18 @@ $(document).on('turbolinks:load', function(){
 
     $($btn).removeClass('none');
     $($nav).addClass('none');
-    $($bgt).addClass('tree__none');
-    $($img).addClass('image__none');
+    $($bgt).addClass('none');
+    $($img).addClass('none');
+    $($img__about).addClass('none');
+    $($img__about2).addClass('none');
 
     } else { //ウィンドウサイズが768以上
       $($btn).addClass('none').text('Menu'); //非表示・文字をメニューにする
       $($nav).removeClass('none').removeAttr('style'); //表示・styleを初期化する
-      $($bgt).removeClass('tree__none').removeAttr('style'); //表示・styleを初期化する
-      $($img).removeClass('image__none').removeAttr('style'); //表示・styleを初期化する
+      $($bgt).removeClass('none').removeAttr('style'); //表示・styleを初期化する
+      $($img).removeClass('none').removeAttr('style'); //表示・styleを初期化する
+      $($img__about).removeClass('none').removeAttr('style'); //表示・styleを初期化する
+      $($img__about2).removeClass('none').removeAttr('style'); //表示・styleを初期化する
   }
 
 
@@ -43,14 +49,18 @@ $(document).on('turbolinks:load', function(){
 
         $($btn).removeClass('none');
         $($nav).addClass('none');
-        $($bgt).addClass('tree__none');
-        $($img).addClass('image__none');
+        $($bgt).addClass('none');
+        $($img).addClass('none');
+        $($img__about).addClass('none');
+        $($img__about2).addClass('none');
 
       } else { //ウィンドウサイズが指定値以上
         $($btn).addClass('none').text('Menu'); //非表示・文字をメニューにする
         $($nav).removeClass('none').removeAttr('style'); //表示・styleを初期化する
-        $($bgt).removeClass('tree__none').removeAttr('style'); //表示・styleを初期化する
-        $($img).removeClass('image__none').removeAttr('style'); //表示・styleを初期化する
+        $($bgt).removeClass('none').removeAttr('style'); //表示・styleを初期化する
+        $($img).removeClass('none').removeAttr('style'); //表示・styleを初期化する
+        $($img__about).removeClass('none').removeAttr('style'); //表示・styleを初期化する
+        $($img__about2).removeClass('none').removeAttr('style'); //表示・styleを初期化する
 
         var $menu_list = $('.menu_list');
         $($menu_list).addClass('none');

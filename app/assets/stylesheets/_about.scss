@@ -1,60 +1,104 @@
 .about {
-
-  &__content{
     width: 65%;
-    margin: 140px auto 0px;
-    opacity: 0.8;
-    color: #0e0d0dfc;
+    margin: 130px auto 0px;
+    font-family: "seravek";
+    padding-right: 40px;
+
+  &__1stcontent {
+    display: flex;
+
+    &__left {
+      margin-top: 65px;
+
+
+      &__1stline {
+        font-size: 29px;
+        font-weight: bold;
+      }
+
+      &__2ndline {
+        font-size: 22px;
+        margin-top: 51px;
+        opacity: 0.6;
+      }
+    }
+
+    &__right__image {
+      position: relative;
+    }
+
+    &__right__image:hover .balloon {
+      display: inline;
+      opacity: 0.8;
+    }
+
+    #artist-name:hover {
+      opacity: 0.6;
+      text-decoration: underline;
+    }
+
+    #album-title:hover {
+      opacity: 0.6;
+      text-decoration: underline;
+    }
   }
 
-  &__1stline{
-    padding-top:40px;
-    font-size: 15px;
-  }
+  &__2ndcontent {
+    display: flex;
+    margin-top: 80px;
 
-  &__2ndline{
-    margin-top:20px;
-    font-size: 15px;
-  }
+    &__right__image {
+      position: relative;
+      margin-right: 40px;
+    }
 
-  &__3rdline{
-    margin-top:15px;
-    font-size: 16px;
-    font-weight: bold;
-  }
+    &__right__image:hover .balloon {
+      display: inline;
+      opacity: 0.8;
+    }
 
-  &__4thline{
-    margin-top: 31px;
-    font-size: 14px;
-  }
+    #artist-name:hover {
+      opacity: 0.6;
+      text-decoration: underline;
+    }
 
-  // &__5thline{
-  //   margin-top:10px;
-  //   font-size: 13px;
-  // }
+    #album-title:hover {
+      opacity: 0.6;
+      text-decoration: underline;
+    }
+
+    &__left {
+      margin-top: 50px;
+
+      &__1stline {
+        font-size: 29px;
+        font-weight: bold;
+      }
+
+      &__2ndline {
+        margin-top: 55px;
+        font-size: 22px;
+        opacity: 0.6;
+      }
+    }
+  }
 
   &__name {
-    margin-top: 20px;
-    font-size: 15px;
+    font-size: 20px;
+    margin-top: 57px;
+    margin-bottom: 200px;
 
-    #about__name {
-      color: gray;
-    }
+     a {
+      opacity: 0.6;
+     }
 
-    #about__name:hover {
-      color: black;
-    }
+     a:hover {
+      opacity: 1.0;
+      text-decoration: underline;
+     }
   }
 
-  &__image--1 {
-    position: fixed;
-    right: -39px;
-    bottom: -5px;
-    z-index: -1;
-  }
+
 }
 
-.image__none {
-    display: none;
-}
 
