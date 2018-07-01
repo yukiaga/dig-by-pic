@@ -2,11 +2,23 @@
   margin-top: 110px;
 }
 
+.mypage__info {
+  line-height: 30px;
+  height: 30px;
+  opacity: 0.95;
+  position: fixed;
+  bottom: 60px;
+  right: 50px;
+  font-family: 'American Typewriter';
+  z-index: 2;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .mypage__box {
   display: flex;
   line-height: 30px;
   text-align: center;
-  /* width: 171px; */
   height: 30px;
   border-style: solid;
   border-width: 0.5px;

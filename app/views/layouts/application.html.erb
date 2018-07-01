@@ -17,10 +17,14 @@
     </div>
 
       <div class="header">
-
-<!--       <h1 class="header__logo"><a href="/">Dig-By-Pic</a></h1> -->
-　　　　<h1 class="header__icon" id="rect"><a href="/"><%= image_tag("dig-by-pic.svg", size: '225x125') %></a></h1>
-
+        <div class="header__icon--cover">
+          <h1 class="header__icon" id="rect">
+            <a href="/"><%= image_tag("dig-by-pic.svg", size: '200x100') %></a>
+          </h1>
+          <h1 class="header__icon--reload none" id="rect">
+            <a href="/"><%= image_tag("dig-by-pic_reload.svg", size: '200x100') %></a>
+          </h1>
+        </div>
         <button class="menu_btn none"><h id="menu_btn_string">Menu</h>
           <button class="menu_list none">
             <ul>
@@ -69,7 +73,7 @@
     </header>
 
     <div class="background__tree2">
-      <%= image_tag("background__tree2.svg", size: '280x200') %>
+       <%= image_tag("background__tree2.svg", size: '280x200') %>
     </div>
 
     <%= yield %>

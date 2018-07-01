@@ -11,50 +11,46 @@
   height: 100px;
   line-height: 40px;
   padding: 0 20px;
-  margin-top: 8px;
   margin-left: 35px;
   margin-right: 65px;
   width: 90%;
   z-index: 1;
-
   position: fixed;
   top: 0px;
   left: 0px;
 
-  &__logo {
-    font-size: 27px;
-    font-family: "seravek";
-    position: fixed;
-    top: 0;
-  }
-
   &__icon{
-    margin-top: -10px;
+    margin-top: 8px;
     float: left;
-    opacity:0.9;
+    opacity:0.8;
   }
 
-  &__icon:hover {
-    filter:alpha(opacity=100);
-    opacity:1.0;
+  &__icon--reload {
+    margin-top: 8px;
+    float: left;
+    opacity:0.8;
   }
 
   &__menu {
+    margin-top: 43px;
     margin-right: 30px;
     display: flex;
     float: right;
-    font-family: "seravek";
+    font-family: "American Typewriter";
     opacity: 0.8;
 
     a {
-      font-size: 17px;
+      font-size: 12px;
     }
 
     #home {
-      margin-right: 40px;
+      margin-right: 18px;
       background-color: white;
-      padding: 6px 10px 6px;
-      border-radius: 10px 10px 10px 10px;
+      padding: 6px 24px 6px;
+      border-radius: 270px 15px 250px 15px / 30px 200px 40px 185px;
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: gray;
     }
 
     #home:hover {
@@ -63,10 +59,13 @@
     }
 
     #about {
-      margin-right: 35px;
+      margin-right: 18px;
       background-color: white;
-      padding: 6px 10px 6px;
-      border-radius: 10px 10px 10px 10px;
+      padding: 6px 23px 6px;
+      border-radius: 240px 45px 100px 36px / 15px 210px 15px 180px;
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: gray;
     }
 
     #about:hover {
@@ -75,10 +74,13 @@
     }
 
     #login {
-      margin-right: 35px;
+      margin-right: 18px;
       background-color: white;
-      padding: 6px 10px 6px;
-      border-radius: 10px 10px 10px 10px;
+      padding: 6px 22px 6px;
+      border-radius: 240px 15px 100px 15px / 30px 200px 35px 185px;
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: gray;
     }
 
     #login:hover {
@@ -87,10 +89,13 @@
     }
 
     #mypage {
-      margin-right: 35px;
+      margin-right: 18px;
       background-color: white;
-      padding: 6px 10px 6px;
-      border-radius: 10px 10px 10px 10px;
+      padding: 6px 14px 6px;
+      border-radius: 230px 15px 130px 15px / 30px 200px 35px 185px;
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: gray;
     }
 
     #mypage:hover {
@@ -99,10 +104,13 @@
     }
 
     #contact {
-      margin-right: 35px;
+      margin-right: 7px;
       background-color: white;
-      padding: 6px 10px 6px;
-      border-radius: 10px 10px 10px 10px;
+      padding: 6px 16px 6px;
+      border-radius: 240px 50px 100px 60px / 30px 245px 55px 225px;
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: gray;
     }
 
     #contact:hover {
@@ -113,15 +121,15 @@
 
   .menu_btn {
     cursor: pointer;
-    padding: 10px;
+    padding: 8px;
     position: fixed;
-    right: 30px;
-    top: 40px;
-    font-family: "seravek";
+    right: 39px;
+    top: 46px;
+    font-family: "American Typewriter";
     opacity: 0.9;
     border-radius: 3px 3px 3px 3px;
-    width: 90px;
-    font-size: 14px;
+    width: 81px;
+    font-size: 12px;
     outline: none;
   }
 
@@ -132,55 +140,59 @@
 
   .menu_list {
     margin-top: 10px;
-    padding: 10px;
-    width: 90px;
+    padding: 15px;
+    width: 81px;
     position: fixed;
-    right: 30px;
+    right: 39px;
     top: 80px;
-    font-family: 'American Typewriter';
+    font-family: "American Typewriter";
     opacity: 0.9;
     border-radius: 3px 3px 3px 3px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   #menu_list_home {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
     cursor: pointer;
   }
 
   #menu_list_home:hover {
     filter:alpha(opacity=80);
     opacity:0.8;
+    text-decoration: underline;
   }
 
   #menu_list_about {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
     cursor: pointer;
   }
 
   #menu_list_about:hover {
     filter:alpha(opacity=80);
     opacity:0.8;
+    text-decoration: underline;
   }
 
   #menu_list_login {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
     cursor: pointer;
   }
 
   #menu_list_login:hover {
     filter:alpha(opacity=80);
     opacity:0.8;
+    text-decoration: underline;
   }
 
   #menu_list_contact {
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     cursor: pointer;
   }
 
   #menu_list_contact:hover {
     filter:alpha(opacity=80);
     opacity:0.8;
+    text-decoration: underline;
   }
 
   .navigation li{
@@ -208,7 +220,7 @@
 
 .background__tree2 {
   position: fixed;
-  top: 100px;
+  top: 110px;
   right:0;
   opacity:0.7;
   margin-right: -60px;
