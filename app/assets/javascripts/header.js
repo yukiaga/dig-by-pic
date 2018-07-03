@@ -87,19 +87,15 @@ $(document).on('turbolinks:load', function(){
 
   }));
 
-  var urlParam = location.pathname;
-
-  // console.log(urlParam.match(/./).input);
-  // →これでurlのパスの文字列のみ抜き出せる
+  var urlParam = location.pathname
 
   if (urlParam.match(/./).input == "/") {
-// urlのパスの文字列が"/"だった場合のみ＝rootだった場合のみ
 
     $(function(){
       $('.header__icon--cover').on('mouseover', function(){
           $('.header__icon').addClass('none');
           $('.header__icon--reload').removeClass('none');
-      })
+      });
     });
 
     $(function(){
@@ -109,7 +105,7 @@ $(document).on('turbolinks:load', function(){
       });
     });
 
-  }
+  };
 
 });
 

@@ -143,13 +143,6 @@ body {
 
 }
 
-// #artworks-you-liked {
-//   position: fixed;
-//   top: -15px;
-//   left: 33px;
-//   z-index: 1;
-// }
-
 .mfp-close {
   margin: 25px auto 0px;
   font-size: 12px;
@@ -158,21 +151,21 @@ body {
 
 // マウスの上に表示させたいので休止
 .balloon {
-    display: none;
-    position: absolute;
-    bottom: 7px;
-    padding: 2px;
-    background-color: white;
-    height: 26px;
-    line-height: 26px;
-    left: 8px;
-    font-size: 111%;
-    font-family: 'American Typewriter';
-    border-radius: 6px 6px 6px 6px;
-    border-color: #000000b3;
-    background-color: #fcfcfff2;
-    text-indent: 6px;
-    color: #464242e6;
+  display: none;
+  position: absolute;
+  bottom: 7px;
+  padding: 2px;
+  background-color: white;
+  height: 26px;
+  line-height: 26px;
+  left: 8px;
+  font-size: 111%;
+  font-family: 'American Typewriter';
+  border-radius: 6px 6px 6px 6px;
+  border-color: #000000b3;
+  background-color: #fcfcfff2;
+  text-indent: 6px;
+  color: #464242e6;
 }
 
 
